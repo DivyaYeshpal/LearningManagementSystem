@@ -1,0 +1,269 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="http://tempuri.org/" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="CourseService" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://tempuri.org/Imports">
+      <xsd:import schemaLocation="https://localhost:44343/CourseService.svc?xsd=xsd0" namespace="http://tempuri.org/" />
+      <xsd:import schemaLocation="https://localhost:44343/CourseService.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import schemaLocation="https://localhost:44343/CourseService.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/WCFLearningManagementSystem" />
+      <xsd:import schemaLocation="https://localhost:44343/CourseService.svc?xsd=xsd3" namespace="http://schemas.datacontract.org/2004/07/System.Data" />
+      <xsd:import schemaLocation="https://localhost:44343/CourseService.svc?xsd=xsd4" namespace="http://schemas.microsoft.com/Message" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="ICourseService_GetCourses_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetCourses" />
+  </wsdl:message>
+  <wsdl:message name="ICourseService_GetCourses_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetCoursesResponse" />
+  </wsdl:message>
+  <wsdl:message name="ICourseService_GetInstructorCourses_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetInstructorCourses" />
+  </wsdl:message>
+  <wsdl:message name="ICourseService_GetInstructorCourses_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetInstructorCoursesResponse" />
+  </wsdl:message>
+  <wsdl:message name="ICourseService_GetInstructorCourseModuleDetails_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetInstructorCourseModuleDetails" />
+  </wsdl:message>
+  <wsdl:message name="ICourseService_GetInstructorCourseModuleDetails_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetInstructorCourseModuleDetailsResponse" />
+  </wsdl:message>
+  <wsdl:message name="ICourseService_SelectCourseTrainee_InputMessage">
+    <wsdl:part name="parameters" element="tns:SelectCourseTrainee" />
+  </wsdl:message>
+  <wsdl:message name="ICourseService_SelectCourseTrainee_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SelectCourseTraineeResponse" />
+  </wsdl:message>
+  <wsdl:message name="ICourseService_SelectModuleTrainee_InputMessage">
+    <wsdl:part name="parameters" element="tns:SelectModuleTrainee" />
+  </wsdl:message>
+  <wsdl:message name="ICourseService_SelectModuleTrainee_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SelectModuleTraineeResponse" />
+  </wsdl:message>
+  <wsdl:message name="ICourseService_SelectTraineeDashboardDetails_InputMessage">
+    <wsdl:part name="parameters" element="tns:SelectTraineeDashboardDetails" />
+  </wsdl:message>
+  <wsdl:message name="ICourseService_SelectTraineeDashboardDetails_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SelectTraineeDashboardDetailsResponse" />
+  </wsdl:message>
+  <wsdl:message name="ICourseService_InsertAssignment_InputMessage">
+    <wsdl:part name="parameters" element="tns:InsertAssignment" />
+  </wsdl:message>
+  <wsdl:message name="ICourseService_InsertAssignment_OutputMessage">
+    <wsdl:part name="parameters" element="tns:InsertAssignmentResponse" />
+  </wsdl:message>
+  <wsdl:message name="ICourseService_SelectAssignment_InputMessage">
+    <wsdl:part name="parameters" element="tns:SelectAssignment" />
+  </wsdl:message>
+  <wsdl:message name="ICourseService_SelectAssignment_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SelectAssignmentResponse" />
+  </wsdl:message>
+  <wsdl:message name="ICourseService_SelectTraineeCourseLink_InputMessage">
+    <wsdl:part name="parameters" element="tns:SelectTraineeCourseLink" />
+  </wsdl:message>
+  <wsdl:message name="ICourseService_SelectTraineeCourseLink_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SelectTraineeCourseLinkResponse" />
+  </wsdl:message>
+  <wsdl:message name="ICourseService_SelectSurveyQuestions_InputMessage">
+    <wsdl:part name="parameters" element="tns:SelectSurveyQuestions" />
+  </wsdl:message>
+  <wsdl:message name="ICourseService_SelectSurveyQuestions_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SelectSurveyQuestionsResponse" />
+  </wsdl:message>
+  <wsdl:message name="ICourseService_Download_InputMessage">
+    <wsdl:part name="parameters" element="tns:Download" />
+  </wsdl:message>
+  <wsdl:message name="ICourseService_Download_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DownloadResponse" />
+  </wsdl:message>
+  <wsdl:message name="ICourseService_Upload_InputMessage">
+    <wsdl:part name="parameters" element="tns:Upload" />
+  </wsdl:message>
+  <wsdl:message name="ICourseService_Upload_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UploadResponse" />
+  </wsdl:message>
+  <wsdl:message name="ICourseService_GetValue_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetValue" />
+  </wsdl:message>
+  <wsdl:message name="ICourseService_GetValue_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetValueResponse" />
+  </wsdl:message>
+  <wsdl:portType name="ICourseService">
+    <wsdl:operation name="GetCourses">
+      <wsdl:input wsaw:Action="http://tempuri.org/ICourseService/GetCourses" message="tns:ICourseService_GetCourses_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ICourseService/GetCoursesResponse" message="tns:ICourseService_GetCourses_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetInstructorCourses">
+      <wsdl:input wsaw:Action="http://tempuri.org/ICourseService/GetInstructorCourses" message="tns:ICourseService_GetInstructorCourses_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ICourseService/GetInstructorCoursesResponse" message="tns:ICourseService_GetInstructorCourses_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetInstructorCourseModuleDetails">
+      <wsdl:input wsaw:Action="http://tempuri.org/ICourseService/GetInstructorCourseModuleDetails" message="tns:ICourseService_GetInstructorCourseModuleDetails_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ICourseService/GetInstructorCourseModuleDetailsResponse" message="tns:ICourseService_GetInstructorCourseModuleDetails_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SelectCourseTrainee">
+      <wsdl:input wsaw:Action="http://tempuri.org/ICourseService/SelectCourseTrainee" message="tns:ICourseService_SelectCourseTrainee_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ICourseService/SelectCourseTraineeResponse" message="tns:ICourseService_SelectCourseTrainee_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SelectModuleTrainee">
+      <wsdl:input wsaw:Action="http://tempuri.org/ICourseService/SelectModuleTrainee" message="tns:ICourseService_SelectModuleTrainee_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ICourseService/SelectModuleTraineeResponse" message="tns:ICourseService_SelectModuleTrainee_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SelectTraineeDashboardDetails">
+      <wsdl:input wsaw:Action="http://tempuri.org/ICourseService/SelectTraineeDashboardDetails" message="tns:ICourseService_SelectTraineeDashboardDetails_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ICourseService/SelectTraineeDashboardDetailsResponse" message="tns:ICourseService_SelectTraineeDashboardDetails_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="InsertAssignment">
+      <wsdl:input wsaw:Action="http://tempuri.org/ICourseService/InsertAssignment" message="tns:ICourseService_InsertAssignment_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ICourseService/InsertAssignmentResponse" message="tns:ICourseService_InsertAssignment_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SelectAssignment">
+      <wsdl:input wsaw:Action="http://tempuri.org/ICourseService/SelectAssignment" message="tns:ICourseService_SelectAssignment_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ICourseService/SelectAssignmentResponse" message="tns:ICourseService_SelectAssignment_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SelectTraineeCourseLink">
+      <wsdl:input wsaw:Action="http://tempuri.org/ICourseService/SelectTraineeCourseLink" message="tns:ICourseService_SelectTraineeCourseLink_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ICourseService/SelectTraineeCourseLinkResponse" message="tns:ICourseService_SelectTraineeCourseLink_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SelectSurveyQuestions">
+      <wsdl:input wsaw:Action="http://tempuri.org/ICourseService/SelectSurveyQuestions" message="tns:ICourseService_SelectSurveyQuestions_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ICourseService/SelectSurveyQuestionsResponse" message="tns:ICourseService_SelectSurveyQuestions_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Download">
+      <wsdl:input wsaw:Action="http://tempuri.org/ICourseService/Download" message="tns:ICourseService_Download_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ICourseService/DownloadResponse" message="tns:ICourseService_Download_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Upload">
+      <wsdl:input wsaw:Action="http://tempuri.org/ICourseService/Upload" message="tns:ICourseService_Upload_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ICourseService/UploadResponse" message="tns:ICourseService_Upload_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetValue">
+      <wsdl:input wsaw:Action="http://tempuri.org/ICourseService/GetValue" message="tns:ICourseService_GetValue_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ICourseService/GetValueResponse" message="tns:ICourseService_GetValue_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="BasicHttpBinding_ICourseService" type="tns:ICourseService">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="GetCourses">
+      <soap:operation soapAction="http://tempuri.org/ICourseService/GetCourses" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetInstructorCourses">
+      <soap:operation soapAction="http://tempuri.org/ICourseService/GetInstructorCourses" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetInstructorCourseModuleDetails">
+      <soap:operation soapAction="http://tempuri.org/ICourseService/GetInstructorCourseModuleDetails" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SelectCourseTrainee">
+      <soap:operation soapAction="http://tempuri.org/ICourseService/SelectCourseTrainee" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SelectModuleTrainee">
+      <soap:operation soapAction="http://tempuri.org/ICourseService/SelectModuleTrainee" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SelectTraineeDashboardDetails">
+      <soap:operation soapAction="http://tempuri.org/ICourseService/SelectTraineeDashboardDetails" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InsertAssignment">
+      <soap:operation soapAction="http://tempuri.org/ICourseService/InsertAssignment" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SelectAssignment">
+      <soap:operation soapAction="http://tempuri.org/ICourseService/SelectAssignment" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SelectTraineeCourseLink">
+      <soap:operation soapAction="http://tempuri.org/ICourseService/SelectTraineeCourseLink" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SelectSurveyQuestions">
+      <soap:operation soapAction="http://tempuri.org/ICourseService/SelectSurveyQuestions" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Download">
+      <soap:operation soapAction="http://tempuri.org/ICourseService/Download" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Upload">
+      <soap:operation soapAction="http://tempuri.org/ICourseService/Upload" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetValue">
+      <soap:operation soapAction="http://tempuri.org/ICourseService/GetValue" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="CourseService">
+    <wsdl:port name="BasicHttpBinding_ICourseService" binding="tns:BasicHttpBinding_ICourseService">
+      <soap:address location="http://localhost:63247/CourseService.svc" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="e19d09f8-8d24-47d6-87ca-4b2aabea2bed" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>false</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="https://localhost:44343/CourseService.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="CourseService3.xsd" MetadataType="Schema" ID="02db3650-e1c8-43d2-a5d5-5d952b96af7a" SourceId="1" SourceUrl="https://localhost:44343/CourseService.svc?xsd=xsd3" />
+    <MetadataFile FileName="CourseService.xsd" MetadataType="Schema" ID="47f0e4d3-d614-4319-a852-7a83850d182b" SourceId="1" SourceUrl="https://localhost:44343/CourseService.svc?xsd=xsd2" />
+    <MetadataFile FileName="CourseService1.xsd" MetadataType="Schema" ID="d52143f0-8ada-4fd7-9748-dec6096f7722" SourceId="1" SourceUrl="https://localhost:44343/CourseService.svc?xsd=xsd1" />
+    <MetadataFile FileName="CourseService2.xsd" MetadataType="Schema" ID="9d0aab3f-385a-4be9-b124-ab108aed9c86" SourceId="1" SourceUrl="https://localhost:44343/CourseService.svc?xsd=xsd0" />
+    <MetadataFile FileName="CourseService.wsdl" MetadataType="Wsdl" ID="92158d93-624e-4cc0-b421-ba7c2f957b74" SourceId="1" SourceUrl="https://localhost:44343/CourseService.svc?wsdl" />
+    <MetadataFile FileName="CourseService.disco" MetadataType="Disco" ID="910e083b-931b-4b2c-a012-a8607e472871" SourceId="1" SourceUrl="https://localhost:44343/CourseService.svc?disco" />
+    <MetadataFile FileName="CourseService4.xsd" MetadataType="Schema" ID="9efe94ce-2d66-4c7c-9cee-324a57f74693" SourceId="1" SourceUrl="https://localhost:44343/CourseService.svc?xsd=xsd4" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>
